@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebookSquare, FaGithub } from "react-icons/fa";
+import { FaFacebookSquare, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md"; // Email icon
 
 const Footer = () => {
@@ -25,6 +25,10 @@ const Footer = () => {
         {/* Instagram */}
         <a href="https://www.instagram.com/itzz_sankalpa/?__pwa=1" target="_blank" rel="noreferrer">
           <AiFillInstagram />
+        </a>
+        {/*/ LinkedIn*/}
+        <a href="https://www.linkedin.com/in/sankalpa-bhandaari/" target="_blank" rel="noreferrer">
+          <FaLinkedinIn />
         </a>
       </div>
 

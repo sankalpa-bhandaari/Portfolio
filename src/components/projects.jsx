@@ -12,6 +12,7 @@ const projects = [
   desc: "A modern web application built using React.js for creating, managing, and exploring glossary terms with search and categories.",
   link: "https://github.com/sankalpa03/my_pasal.git"
 },
+
 {
   title: "Portfolio Website",
   desc: "A responsive personal portfolio website built using React and modern CSS, showcasing projects and skills.",
