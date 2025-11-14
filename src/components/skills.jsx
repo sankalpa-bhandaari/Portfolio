@@ -8,7 +8,8 @@ const Skills = () => (
     <div className="skills-container">
       {skills.map((skill, index) => (
         <div key={index} className="skill">{skill}</div>
-      ))}
+      ))
+      }
     </div>
   </section>
 );
