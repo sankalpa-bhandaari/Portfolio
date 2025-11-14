@@ -8,7 +8,7 @@ const educationData = [
   },
   {
     degree: "Higher Secondary Education",
-    institution: "Brahma Rupa Secondary School",
+    institution: "Rupa Secondary School",
     year: "2017- 2022",
   },
 ];
