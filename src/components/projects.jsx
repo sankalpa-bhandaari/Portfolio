@@ -18,11 +18,8 @@ const projects = [
   desc: "A responsive personal portfolio website built using React and modern CSS, showcasing projects and skills.",
   link: "https://github.com/sankalpa03/portfolio"
 }
-
-
+ 
 ]
-
-
 const Projects = () => (
   <section id="projects">
     <h2>Projects</h2>
