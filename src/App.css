@@ -72,70 +72,89 @@ a:hover {
 }
 
 /* ===== Navbar ===== */
-nav {
-  position: fixed;
+/* NAVBAR MAIN */
+/* NAVBAR MAIN */
+.navbar {
   width: 100%;
-  top: 0;
-  background: rgba(18, 18, 18, 0.95);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  backdrop-filter: blur(5px);
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 15px 40px;
+  background: #111;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Logo circle style */
-.logo-img {
-  width: 70px;
-  height: 70px;
+/* LEFT LOGO + TEXT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-profile {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(180, 174, 176, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo-img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(241, 145, 177, 0.5);
+.nav-title {
+  font-size: 22px;
+  font-weight: 600;
 }
 
-/* Navigation links */
-.links a {
-  margin-left: 2rem;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  color: #bdbdbd;
+/* NAV LINKS - DESKTOP */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links li a {
+  color: white;
   text-decoration: none;
-  position: relative;
-  padding-bottom: 7px;
-  transition: color 0.3s ease;
+  font-size: 18px;
 }
 
-.links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ff4081;
-  transition: width 0.3s ease;
+.nav-links li a:hover {
+  color: #00c3ff;
 }
 
-.links a:hover {
-  color: #fff;
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
-.links a:hover::after {
-  width: 100%;
+/* -------------------- MOBILE -------------------- */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    text-align: center;
+
+    display: none; /* hidden by default */
+  }
+
+  .nav-links.open {
+    display: flex; /* show when open */
+  }
 }
+
 
 /* ===== Hero Section ===== */
 #home {
