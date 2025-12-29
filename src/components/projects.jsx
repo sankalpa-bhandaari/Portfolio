@@ -25,11 +25,11 @@ const projects = [
 
 const Projects = () => (
   <section id="projects">
-    <h2 className="section-title">Projects</h2>
+    <h2>Projects</h2>
 
     <div className="projects-container">
       {projects.map((p, i) => (
-        <div key={i} className="project-card">
+        <div className="project-card" key={i}>
           {p.image && (
             <img
               src={p.image}
@@ -47,7 +47,7 @@ const Projects = () => (
                 href={p.link}
                 target="_blank"
                 rel="noreferrer"
-                className="project-link view"
+                className="project-link"
               >
                 View Project →
               </a>
@@ -58,7 +58,7 @@ const Projects = () => (
                 href={p.demo}
                 target="_blank"
                 rel="noreferrer"
-                className="project-link demo"
+                className="project-link"
               >
                 Live Demo →
               </a>
