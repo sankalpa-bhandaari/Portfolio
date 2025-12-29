@@ -401,6 +401,11 @@ section p {
   text-decoration: underline;
 }
 
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
 /* ===== Contact ===== */
 #contact {
   padding: 60px 20px;
