@@ -40,8 +40,8 @@ const Projects = () => (
           <p>{p.desc}</p>
 
           <div className="project-links">
-            {p.link && (
-              <a
+           <a {p.link && (
+            
                 href={p.link}
                 target="_blank"
                 rel="noreferrer"
@@ -51,8 +51,8 @@ const Projects = () => (
               </a>
             )}
 
-            {p.demo && (
-              <a
+           <a> {p.demo && (
+            
                 href={p.demo}
                 target="_blank"
                 rel="noreferrer"
