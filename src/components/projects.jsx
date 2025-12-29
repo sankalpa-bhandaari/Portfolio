@@ -6,6 +6,7 @@ const projects = [
   title: "Cable Car Booking",
   desc: "A simple website built using HTML, CSS, and JavaScript for booking cable car tickets. Users can book tickets and download them as PDF.",
   link: "https://github.com/sankalpa03/CableCar_booking.git",
+  demo:"https://cable-car-booking.vercel.app/",
   image: "/project1.png"
 },
  {
@@ -36,6 +37,7 @@ const Projects = () => (
           <h3>{p.title}</h3>
           <p>{p.desc}</p>
           {p.link && <a href={p.link} target="_blank" rel="noreferrer" className="project-link">View Project &rarr;</a>}
+          {p.link &&<a href={p.demo}  target="_blank" rel="noreferrer" className="project-link">demo &rarr;</a>}
         </div>
       ))}
     </div>
