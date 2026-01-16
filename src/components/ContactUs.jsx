@@ -23,7 +23,7 @@ const ContactUs = () => {
           <h3>Social Media</h3>
           <div className="social-icons">
           
-            <a href="https://www.instagram.com/itzz_sankalpa/?__pwa=1" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/sankalpa.b_03/?__pwa=1" target="_blank" rel="noreferrer">
               <AiFillInstagram />
             </a>
             <a href="https://www.facebook.com/sankalpa.bhandaari" target="_blank" rel="noreferrer">
